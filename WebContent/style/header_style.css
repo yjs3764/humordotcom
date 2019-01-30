@@ -1,0 +1,184 @@
+/*****************************************************************************************/
+/**************************                                  *****************************/
+/**************************      메뉴들에 적용할 스타일      *****************************/
+/**************************                                  *****************************/
+/*****************************************************************************************/
+div a {
+	color: balck;
+}
+
+div a:visited {
+	color: balck;
+}
+
+div a:hover {
+	color: balck;
+}
+
+/*******************모바일뷰 메뉴 스타일*********************/
+#nav-trigger { /*내비게이션 트리거 스타일*/
+	display: none;
+	text-align: center; /*텍스트 정렬은 센타로 놓는다*/
+}
+/**/
+#nav-trigger span {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #ff0032;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#nav-trigger span:after {
+	display: inline-block;
+	margin-left: 10px;
+	width: 20px;
+	height: 10px;
+	content: "";
+	border-left: solid 10px transparent;
+	border-top: solid 10px #fff;
+	border-right: solid 10px transparent;
+}
+
+#nav-trigger span:hover {
+	background-color: #e6002d;
+	cursor: pointer;
+}
+
+#nav-trigger span.open:after {
+	border-left: solid 10px transparent;
+	border-top: none;
+	border-bottom: solid 10px #fff;
+	border-right: solid 10px transparent;
+}
+
+nav {
+	margin-bottom: 30px;
+}
+
+/**************************내비게이션 메인 스타일******************************/
+nav#nav-main {
+	background-color: #ff0032;
+	padding: 10px 0;
+}
+
+nav#nav-main ul { /**************내비게이션 메뉴 ul태그 스타일************/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav#nav-main li { /**********리스트 타입의 스타일*******/
+	display: inline-block;
+	border-right: solid 1px #cc0028; /*오른쪽의 경계선 설정*/
+	padding: 0 5px;
+}
+
+nav#nav-main li:last-child { /*마지막 리스트의 오른쪽 경계션 없음*/
+	border-right: none;
+}
+
+nav#nav-main a { /***********링크 버튼 스타일************/
+	display: block; /*블록 디스플레이로 설정*/
+	color: white; /*하 얀 색*/
+	padding: 10px 30px;
+}
+
+nav#nav-main a:hover { /*링크 태그에 마우스 커서를 갖다댈 때의 스타일*/
+	background-color: #e6002d;
+	color: #fff;
+}
+
+nav#nav-mobile {
+	position: relative;
+	/******************상대적 포지션으로 설정**********************/
+	display: none;
+	z-index: 99999;
+}
+
+nav#nav-mobile ul {
+	display: none;
+	list-style-type: none;
+	position: absolute; /*************드롭다운 메뉴는 앱솔루트로 설정**************/
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #ff0032;
+}
+
+nav#nav-mobile li {
+	display: block;
+	padding: 5px 0;
+	margin: 0 5px;
+	border-bottom: solid 1px #cc0028;
+}
+
+nav#nav-mobile li:last-child {
+	border-bottom: none;
+}
+
+nav#nav-mobile a {
+	display: block;
+	color: white;
+	padding: 10px 30px;
+}
+
+nav#nav-mobile a:hover {
+	background-color: #e6002d;
+	color: #fff;
+}
+
+/******************미디어**********************/
+@media all and (max-width: 900px) {
+	#nav-trigger {
+		display: block;
+	}
+	nav#nav-main {
+		display: none;
+	}
+	nav#nav-mobile {
+		display: block;
+	}
+}
+
+#logo_bar { /*로고 바에 적용할 스타일*/
+	height: 60px; /*로고바 공간의 높이는 60픽셀*/
+	padding: 10px;
+	list-style-type: none;
+}
+
+#logo_bar div { /*로고 텍스트 스타일*/
+	text-align: center;
+	font-size: 45px;
+	font-family: fantasy; /*로고 폰트는 절대 건드리지 말것*/
+	float: left;
+}
+
+/************로고바에 있는 개인정보 메뉴*************/
+#logo_bar ul {
+	float: right;
+}
+
+#personal_menu li {
+	list-style-type: none;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#personal_menu li a {
+	color: azure;
+	text-decoration: none;
+	border-right: solid 1px #e2e2e2;
+	padding-right: 5px;
+}
+
+#personal_menu li a#end {
+	color: balck;
+	text-decoration: none;
+	border-right: none;
+	padding-right: 5px;
+}

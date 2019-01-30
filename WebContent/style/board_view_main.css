@@ -1,0 +1,120 @@
+﻿/* 우측 메인 콘텐트 */
+section#main {
+    width:758px;
+    float:left;
+    margin:50px 0 0 100px;
+    /* border:solid 1px #ff0000; */
+}
+section#main h2#board_title {
+    margin-top:20px;
+    padding:0 0 5px 0;
+}
+section#main #view_title_box {
+    margin:10px 0 0 0;
+    padding:10px;
+    border-top:solid 2px powderblue;
+    background-color:ghostwhite;	
+} 
+section#main #view_title_box #pre {
+	color:gray;
+}
+section#main #view_title_box #title {
+	font-weight:bold;
+	font-size:13px;
+}
+section#main #view_title_box #info {
+    /* margin:0 0 0 300px; */
+} 
+section#main #view_title_box #date {
+    float:right;
+    font-weight:bold;
+} 
+section#main #view_title_box #divide {
+    color:lightgray;
+} 
+section#main #view_content {
+    padding:20px 10px 10px 10px;
+    line-height:150%;
+    min-height:300px;
+} 
+
+section#main #comment_box1 {
+    /* height:112px; */
+    position:relative;
+    background-color:#efefef;
+    border-top:solid 1px #cccccc;
+}
+section#main #comment_box1 #col1 {
+	width:30px;
+	height:40px;
+	border-bottom:1px dashed darkgray;
+	font-size:11px;
+	text-align:center;
+	color:darkgray;
+}
+section#main #comment_box1 #col2 {
+	width:80px;
+	height:40px;
+	border-bottom:1px dashed darkgray;
+}
+section#main #comment_box1 #col3 {
+	width:630px;
+	height:40px;
+	border-bottom:1px dashed darkgray;
+}
+section#main #comment_box1 #col4 {
+	width:37px;
+	height:40px;
+	border-bottom:1px dashed darkgray;
+	font-size:11px;
+	color:gray;
+} 
+
+section#main #comment_box {
+    height:112px;
+    position:relative;
+    margin-top:5px;
+    background-color:#efefef;
+    border-top:solid 1px #cccccc;
+}
+section#main #comment_box #title_comment {
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+section#main #comment_box textarea {
+    width:515px;
+    height:78px;
+    position:absolute;
+    top:15px;
+    left:145px;	
+}
+section#main #comment_box #ok_ripple {
+    position:absolute;
+    top:15px;
+    left:670px;	
+}
+
+section#main #comment_box #nick {
+    position:absolute;
+    top:15px;
+    left:10px;
+}
+section#main #comment_box #pass {
+    position:absolute;
+    top:45px;
+    left:10px;
+}
+
+section #buttons {
+    text-align:right;
+    margin:20px 0 0 0;
+    cursor:pointer;
+}
+section#main #updown {
+	text-align:center;
+}
+section#main #updown #up {
+	width:100px;
+	
+}

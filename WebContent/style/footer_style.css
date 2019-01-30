@@ -1,0 +1,34 @@
+/**********************푸터에 적용할 스타일******************************************/
+footer {
+	text-align: center;
+	font-size: 12px;
+	height: auto;
+	padding-top: 30px;
+	line-height: 20px;
+}
+
+footer ul#footer_info li {
+	display: inline-block;
+	border-right: solid 1px #e2e2e2;
+	padding-right: 5px;
+	padding: 8px;
+}
+
+footer ul#footer_info li a {
+	list-style-type: none;
+	text-decoration: none;
+	float: left;
+	color: azure;
+}
+
+footer ul#footer_info li #end {
+	border: none;
+}
+
+footer #footer_info {
+	font-size: 12px;
+}
+
+footer .corp_info {
+	
+}
